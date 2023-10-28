@@ -1,1 +1,24 @@
 @import url(./reset.css);
+
+.inner{
+    max-width: 1340px;
+    padding: 0 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+/* -----common----- */
+
+header .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 550px;
+}
+.header_menu{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
