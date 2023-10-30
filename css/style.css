@@ -57,26 +57,49 @@ header .inner{
     padding: 40px;
 }
 .section_2 h1, .section_3 h1{
-    font-size: 30px;
+    font-size: 35px;
+    font-family: var(--eng);
     text-align: center;
     color: #333;
 }
-.best_item_wrap{
-    display: flex;
-}
-.best_item img{
-    width: 30%;
+.section_2 .swiper-slide img{
+    width: 100%;
     height: 350px;
+    margin: 30px 0;
+}
+.section_2 .scrollBar{
+    width: 600px;
+    height: 7px;
+    margin: 20px auto;
+    border-radius: 5px;
+    background-color: #ddd;
+}
+.section_2 .scrollBar div{
+    background-color: #444;
+}
+.swiper-slide h4, .swiper-slide p{
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
 }
 /* ----section_2_end---- */
 .section_3{
     background-color: #fcf9ee;
 }
+.about_item_wrap{
+    margin-top: 50px;
+}
+.about_item{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
 .about_item img{
     margin-top: 30px;
-    width: 50%;
-    height: 500px;
+    width: 500px;
+    height: 600px;
 }
+
 /* ----section_3_end---- */
 footer{
     background-color: #333;
@@ -85,6 +108,7 @@ footer{
 footer span{
     color: #fcf9ee;
     font-size: 15px;
+    font-family: var(--kor);
     font-weight: 550;
 }
 footer ul{
@@ -101,5 +125,6 @@ footer li{
     font-weight: 500;
     font-size: 13px;
     margin-right: 20px;
+    font-family: var(--kor);
 }
 /* ----footer_end---- */
