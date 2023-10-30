@@ -1,10 +1,17 @@
 @import url(./reset.css);
 
+:root{
+    --kor : 'Noto Sans KR';
+    --eng : 'Roboto Slab';
+}
 .inner{
     max-width: 1340px;
     padding: 0 20px;
     width: 100%;
     margin: 0 auto;
+}
+#wrap{
+    overflow: hidden;
 }
 /* -----common----- */
 
@@ -22,9 +29,29 @@ header .inner{
     justify-content: space-between;
     align-items: center;
 }
-/* .header_menu li{} */
+.header_menu li{
+    font-family: var(--eng);
+    font-weight: 600;
+}
 /* ----header_end---- */
-
+.section_1 > .pager{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.section_1 > .pager span{
+    display: block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #555;
+}
+.section_1 .pager .swiper-pagination-bullet-active{
+    background-color: #444;
+}
+.swiper-slide img{
+    height: 650px;
+}
 /* ----section_1_end---- */
 .section_2, .section_3{
     padding: 40px;

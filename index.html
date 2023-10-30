@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JO MALONE LONDON</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -23,17 +27,14 @@
         </header>
         <!-- header_end -->
         <section class="section_1">
-            <div class="main_img_wrap">
-                <div class="main_img">
-                    <img src="./img/section_1_img_1.avif">
+            <div class="swiper-container_01">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./img/section_1_img_1.avif"></div>
+                    <div class="swiper-slide"><img src="./img/section_1_img_2.avif"></div>
+                    <div class="swiper-slide"><img src="./img/section_1_img_3.avif"></div>
                 </div>
-                <!-- <div class="main_img">
-                    <img src="./img/section_1_img_2.avif">
-                </div>
-                <div class="main_img">
-                    <img src="./img/section_1_img_3.avif">
-                </div> -->
             </div>
+            <div class="pager"></div>
         </section>
         <!-- section_1_end -->
         <section class="section_2">
@@ -130,6 +131,8 @@
         <!-- footer_end -->
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
 
 </body>
