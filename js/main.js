@@ -1,4 +1,5 @@
 
+// swiper_01
 const slide01 = new Swiper('.swiper-container_01',{
     loop : true, 
     pagination : { 
@@ -11,15 +12,35 @@ const slide01 = new Swiper('.swiper-container_01',{
     speed : 1000
 });
 
+// swiper_02
 const slide02 = new Swiper('.swiper-container_02',{
     loop : true, 
+    loopAdditionalSlides : 1,
+    navigation : {
+        nextEl : '.section_2 .btnR',
+        prevEl : '.section_2 .btnL'
+    },
     scrollbar : {
         el : '.section_2 .scrollBar'
     },
-    slidesPerView : 3,
-    spaceBetween : 30,
+    slidesPerView : 7,
+    spaceBetween : 20,
     autoplay : {
-        delay : 3000
+        delay : 1000
     },
-    speed : 1000
+    speed : 1000,
+    breakpoints: {
+        1410: {
+            slidesPerView: 4,
+            spaceBetween: 40
+        },
+        765: {
+            slidesPerView: 3,
+            spaceBetween: 40
+        },
+        0: {
+            slidesPerView: 'auto',
+            spaceBetween: 20
+        }
+    }
 });
