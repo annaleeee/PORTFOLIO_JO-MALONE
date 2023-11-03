@@ -52,6 +52,11 @@ header .inner{
 .swiper-slide img{
     height: 800px;
 }
+@media all and (max-width:767px){
+    .swiper-slide img{
+        height: 700px;
+    }
+}
 /* ----section_1_end---- */
 .section_2{
     padding: 60px;
@@ -113,6 +118,9 @@ header .inner{
 }
 
 @media all and (max-width:767px){
+    .section_2 .swiper-slide img{
+        height: 300px;
+    }
     .section_2 .btnL, .section_2 .btnR{
         width: 40px;
         height: 40px;
@@ -122,6 +130,7 @@ header .inner{
         width: 350px;
     }
 }
+
 
 /* ----section_2_end---- */
 .section_3{
