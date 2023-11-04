@@ -15,7 +15,6 @@ const slide01 = new Swiper('.swiper-container_01',{
 // swiper_02
 const slide02 = new Swiper('.swiper-container_02',{
     loop : true, 
-    loopAdditionalSlides : 1,
     navigation : {
         nextEl : '.section_2 .btnR',
         prevEl : '.section_2 .btnL'
@@ -23,7 +22,6 @@ const slide02 = new Swiper('.swiper-container_02',{
     scrollbar : {
         el : '.section_2 .scrollBar'
     },
-    slidesPerView : 7,
     spaceBetween : 20,
     autoplay : {
         delay : 1000
