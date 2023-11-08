@@ -1,3 +1,9 @@
+// header_menu_list
+$('.header_menu_list').click(function(){
+    $(this).siblings().find('.list').slideUp();
+    $(this).find('.list').slideToggle();
+});
+
 // m_navbar 햄버거 메뉴
 let navbar = $('.m_navbar');
 navbar.hide();

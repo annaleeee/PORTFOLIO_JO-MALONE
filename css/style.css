@@ -22,13 +22,14 @@ header .inner{
     align-items: center;
 }
 .logo img{
-    width: 550px;
+    width: 90%;
 }
 .header_menu{
-    width: 35%;
+    width: 30%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 300px;
 }
 .header_menu li{
     font-family: var(--eng);
@@ -36,6 +37,38 @@ header .inner{
 }
 .header_menu li:hover a{
     color: #5e30029f;
+}
+.header_menu_list{
+    position: relative;
+}
+.list{
+    display: none;
+    width: 130px;
+    background-color: #ffffff;
+    font-size: 14px;
+    border: 1px solid #343434;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 999;
+    position: absolute;
+    top: 30px;
+    right: -100%;
+}
+.last_list{
+    padding: 10px;
+    left: -20%;
+}
+.list > li{
+    line-height: 150%;
+    cursor: pointer;
+    text-align: center;
+}
+.last_list > li{
+    line-height: 200%;
+}
+.list > li:hover{
+    background-color: #5e30029f;
+    color: var(--whiteColor);
 }
 .m_navbar{
     display: none;
@@ -46,8 +79,18 @@ header .inner{
         display: none;
     }
     .header_m_menu{
-        position: relative;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #ababab;
     }
+    .header_m_menu:hover{
+        background-color: #454545;
+    }
+    .header_m_menu:hover .mobile_menu, 
+    .header_m_menu:hover .mobile_menu::after{
+        background-color: var(--whiteColor);
+    }
+
     .mobile_menu,
     .mobile_menu::after{
         display: block;
@@ -56,9 +99,9 @@ header .inner{
         background-color: #565656;
     }
     .mobile_menu{
-        position: absolute;
-        top: -5px;
-        right: 30px;
+        position: relative;
+        top: 13px;
+        left: 6px;
     }
     .mobile_menu::after{
         content: "";
@@ -68,8 +111,7 @@ header .inner{
 
     .m_navbar{
         display: block;
-        width: 100%;
-        height: 280px;
+        padding: 20px 0;
         background-color: #fcf9ee;
     }
     .dropDown{
@@ -113,8 +155,11 @@ header .inner{
 }
 
 @media all and (min-width:768px) and (max-width:1060px){
+    header{
+        padding: 5px 0;
+    }
     .header_menu{
-        margin-left: -100px;
+        width: 50%;
     }
 }
 
