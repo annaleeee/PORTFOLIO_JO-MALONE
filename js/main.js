@@ -60,3 +60,24 @@ const slide02 = new Swiper('.swiper-container_02',{
         }
     }
 });
+
+// go-to-top btn
+let topBtn = $('#top_btn');
+topBtn.hide();
+
+$(window).scroll(function(){
+    if($(this).scrollTop()>500){
+        topBtn.fadeIn();
+    }
+    else{
+        topBtn.fadeOut();
+    }
+});
+
+topBtn.on('click', function(){
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+});

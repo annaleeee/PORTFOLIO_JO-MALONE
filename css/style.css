@@ -501,6 +501,24 @@ footer .inner{
         margin: 30px 0;
     }
 }
-/* ----footer_end */
+/* ----footer_end---- */
+#top_btn{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    border: 1px solid #565656;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 35px;
+    padding: 6px;
+    opacity: .8;
+    z-index: 999;
+}
+.active{
+    color: #fff;
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+/* ----top_btn_end---- */
 
 
