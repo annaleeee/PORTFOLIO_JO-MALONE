@@ -61,7 +61,7 @@ const slide02 = new Swiper('.swiper-container_02',{
     }
 });
 
-// go-to-top btn
+// top_btn
 let topBtn = $('#top_btn');
 topBtn.hide();
 
@@ -80,4 +80,16 @@ topBtn.on('click', function(){
         left: 0,
         behavior: 'smooth'
     });
+});
+
+// top_btn footer에서 색상 변경
+$(window).scroll(function(){
+    let scrollPosition = $(window).scrollTop();
+    let footerPosition = $('.footer_menu').offset().top - $(window).height(); 
+
+    if (scrollPosition > footerPosition){
+        topBtn.addClass('active');
+    } else {
+        topBtn.removeClass('active');
+    }
 });
