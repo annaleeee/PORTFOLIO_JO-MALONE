@@ -85,10 +85,12 @@ header .inner{
     }
     .header_m_menu:hover{
         background-color: #454545;
+        transition-duration: .5s;
     }
     .header_m_menu:hover .mobile_menu, 
     .header_m_menu:hover .mobile_menu::after{
         background-color: var(--whiteColor);
+        transition-duration: .5s;
     }
 
     .mobile_menu,
@@ -212,6 +214,10 @@ header .inner{
     height: 250px;
     margin: 30px 0;
 }
+.section_2 .swiper-slide img:hover{
+    transform: scale(1.05);
+    transition-duration: .3s;
+}
 .section_2 .btnL, .section_2 .btnR{
     z-index: 9999;
     position: absolute;
@@ -246,6 +252,9 @@ header .inner{
     text-align: center;
     color: #333;
     margin-bottom: 10px;
+}
+.swiper-slide h4:hover{
+    opacity: .8;
 }
 
 @media all and (max-width:767px){
@@ -448,6 +457,9 @@ header .inner{
     margin-right: 20px;
     font-family: var(--kor);
 }
+.footer_menu li:hover{
+    opacity: .8;
+}
 /* ----footer_menu_end---- */
 footer{
     background-color: #222;
@@ -506,12 +518,12 @@ footer .inner{
     position: fixed;
     bottom: 40px;
     right: 40px;
-    border: 1px solid #565656;
+    border: 2px solid #565656;
     border-radius: 50%;
     cursor: pointer;
     font-size: 35px;
     padding: 6px;
-    opacity: .8;
+    opacity: .6;
     z-index: 999;
 }
 #top_btn.active{
