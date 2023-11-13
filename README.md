@@ -34,7 +34,7 @@ JavaScript, jQuery, Swiper
 
 # 💥 오류 수정
 ## 1️⃣ slidesPerView: 4일 경우, 마지막 item에서 처음 item으로 넘어가지지 않음
-<img src="./README_img/swiper_error.png">
+<img src="./README_img/swiper_error.png" width="80%">
 
 #### ✔ WHY ?
 전체 슬라이드 개수가 7개였음 <br>
@@ -42,7 +42,7 @@ JavaScript, jQuery, Swiper
 
 #### ✔ HOW ?
 전체 슬라이드를 하나 더 추가하여 8개로 만들면? -> 처음 item으로 넘어가짐
-<img src="./README_img/swiper_error_after.png">
+<img src="./README_img/swiper_error_after.png" width="80%">
 
 <br>
 
@@ -62,14 +62,13 @@ JavaScript, jQuery, Swiper
 <br>
 
 #### [ $(window).height()를 빼는 이유 ? ]
-- footer_menu 바로 위의 높이를 알기 위해 빼야 함
+: footer_menu 바로 위의 높이를 알기 위해 빼야 함
 
 <br>
 
-<img src="./README_img/black_topBtn.png">
-<img src="./README_img/white_topBtn.png">
-<br>
-=> footer 부분에서만 하얀색으로 변경됨
+#### ✔ footer 부분(검은 바탕)에서만 하얀색으로 변경
+<img src="./README_img/top_btn.png" width="80%">
+
 
 
 
