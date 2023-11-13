@@ -22,11 +22,55 @@ JavaScript, jQuery, Swiper
 <br>
 # 🖥 화면 구성
 #### [PC]
+<img src="./README_img/preview_pc.png">
 
 #### [Tablet]
+<img src="./README_img/preview_tablet.png">
 
 #### [Mobile]
+<img src="./README_img/preview_mobile.png">
 
 <br>
 
 # 💥 오류 수정
+## 1️⃣ slidesPerView: 4일 경우, 마지막 item에서 처음 item으로 넘어가지지 않음
+<img src="./README_img/swiper_error.png">
+
+#### ✔ WHY ?
+전체 슬라이드 개수가 7개였음 <br>
+한번에 보이는 개수가 절반보다 많은 4로 설정되어 있기 때문에 슬라이드 error 발생
+
+#### ✔ HOW ?
+전체 슬라이드를 하나 더 추가하여 8개로 만들면? -> 처음 item으로 넘어가짐
+<img src="./README_img/swiper_error_after.png">
+
+<br>
+
+# ⭐ 기능 구현
+## 1️⃣ top_btn을 footer에서만 색상 변경
+<img src="./README_img/topBtn_js.png">
+
+##### $(window).scrollTop();
+: 현재 스크롤바의 위치값
+
+##### $('.footer_menu').offset().top
+: '.footer_menu' 요소의 오프셋 상단 위치를 제공
+
+##### $(window).height();
+: 브라우저 창의 높이 (실제 화면에 나타나는 영역의 폭과 너비)
+
+<br>
+
+#### [ $(window).height()를 빼는 이유 ? ]
+- footer_menu 바로 위의 높이를 알기 위해 빼야 함
+
+<br>
+
+<img src="./README_img/black_topBtn.png">
+<img src="./README_img/white_topBtn.png">
+<br>
+=> footer 부분에서만 하얀색으로 변경됨
+
+
+
+
