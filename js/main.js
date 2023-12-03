@@ -6,6 +6,22 @@ $(document).ready(function(){
         $(this).find('.list').slideToggle();
     });
     
+    // coupon 받기
+    $(document).on('keydown', pushEsc);
+    function pushEsc(e){
+        if(e.which == '27'){ // esc keycode = 27
+            $('.coupon').fadeOut(800);
+        }
+    }
+
+    $('.coupon_btn').click(function(){
+        $('.coupon').fadeIn(800);
+    });
+
+    $('#ok_btn').click(function(){
+        $('.coupon').fadeOut(800);
+    });
+
     // m_navbar 햄버거 메뉴
     let navbar = $('.m_navbar');
     navbar.hide();

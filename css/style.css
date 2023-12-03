@@ -20,6 +20,7 @@ header .inner{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 .logo img{
     width: 90%;
@@ -72,6 +73,44 @@ header .inner{
 }
 .m_navbar{
     display: none;
+}
+
+.coupon{
+    display: none;
+    width: 250px;
+    height: 130px;
+    background-color: #fff;
+    border: 1px solid #555;
+    border-radius: 10px;
+    margin: 0 auto;
+    position: absolute;
+    top: 100%;
+    left: 60%;
+    z-index: 999;
+}
+.download, .check, #ok_btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.download{
+    margin: 20px 0;
+    font-weight: 600;
+}
+.check{
+    opacity: .7;
+    font-size: 15px;
+}
+#ok_btn{
+    width: 60px;
+    height: 25px;
+    margin: 20px 100px;
+    background-color: rgb(145, 88, 47);;
+    color: #fff;
+    border-radius: 10px;
+    border: 1px solid #444;
+    cursor: pointer;
 }
 
 @media all and (max-width:767px){
@@ -162,6 +201,9 @@ header .inner{
     }
     .header_menu{
         width: 50%;
+    }
+    .coupon{
+        left: 65%;
     }
 }
 
@@ -531,5 +573,4 @@ footer .inner{
     border: 2px solid var(--whiteColor);
 }
 /* ----top_btn_end---- */
-
 
