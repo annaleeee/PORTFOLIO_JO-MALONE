@@ -1,285 +1,342 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JO MALONE LONDON</title>
-    <script src="https://kit.fontawesome.com/f9f378469a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <script
+      src="https://kit.fontawesome.com/f9f378469a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <div id="wrap">
-        <header>
-            <div class="inner">
-                <div class="logo">
-                   <a href="#"><img src="./img/black_logo.png"></a>
-                </div>
-                <ul class="header_menu">
-                    <li class="header_menu_list">
-                        <a href="#">SHOP</a>
-                        <ul class="list">
-                            <li>NEW</li>
-                            <li>BEST SELLER</li>
-                            <li>GIFT</li>
-                        </ul>
-                    </li>
-                    <li class="header_menu_list">
-                        <a href="#">LOGIN</a>
-                        <ul class="list">
-                            <li>MY PAGE</li>
-                            <li>CART</li>
-                        </ul>
-                    </li>
-                    <li class="coupon_btn"><a href="#">COUPON</a></li>
-                    <li class="header_menu_list">
-                        <a href="#">CONTACT US</a>
-                        <ul class="list last_list">
-                            <li>STORE SERVICE</li>
-                            <li>INSTAGRAM</li>
-                            <li>FACEBOOK</li>
-                        </ul>
-                    </li>
-                </ul>
-                <div class="coupon" role="alert">
-                    <p class="download">다운 완료</p>
-                    <p class="check">마이페이지에서 확인하세요</p>
-                    <button id="ok_btn">OK</button>
-                </div>
-                <div class="header_m_menu">
-                    <span class="mobile_menu"></span>
-                </div>
-            </div>
-            <div class="m_navbar">
-                <ul class="dropDown">
-                    <li class="dropDown_title">
-                        <a href="#">SHOP</a>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                        </svg>
-                        <ul class="dropDown_list">
-                            <li>NEW</li>
-                            <li>BEST SELLER</li>
-                            <li>GIFT</li>
-                        </ul>
-                    </li>
-                    <li class="dropDown_title">
-                        <a href="#">LOGIN</a>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                        </svg>
-                        <ul class="dropDown_list">
-                            <li>MY PAGE</li>
-                            <li>CART</li>
-                        </ul>
-                    </li>
-                    <li class="dropDown_title">
-                        <a href="#">CONTACT US</a>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                        </svg>
-                        <ul class="dropDown_list">
-                            <li>STORE SERVICE</li>
-                            <li>INSTAGRAM</li>
-                            <li>FACEBOOK</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </header>
-        <!-- header_end -->
-        <section class="section_1">
-            <div class="swiper-container_01">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="./img/section_1_img_1.avif"></div>
-                    <div class="swiper-slide"><img src="./img/section_1_img_2.avif"></div>
-                    <div class="swiper-slide"><img src="./img/section_1_img_3.avif"></div>
-                </div>
-            </div>
-            <div class="pager"></div>
-        </section>
-        <!-- section_1_end -->
-        <section class="section_2">
-            <div class="inner">
-                <h1>Best Seller</h1>
-                <div class="swiper-container_02">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a href="#"><img src="./img/section_2_img_1.avif"></a>
-                            <a href="#"><h4>Christmas Cologne Collection</h4></a>
-                            <a href="#"><p>₩159,000 (9ml*5)</p></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#"><img src="./img/section_2_img_2.avif"></a>
-                            <a href="#"><h4>Limitied Cologne Collection</h4></a>
-                            <a href="#"><p>₩159,000 (9ml*5)</p></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#"><img src="./img/section_2_img_3.avif"></a>
-                            <a href="#"><h4>Ginger Biscuit Cologne</h4></a>
-                            <a href="#"><p>₩230,000 (100ml)</p></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#"><img src="./img/section_2_img_4.avif"></a>
-                            <a href="#"><h4>Orange Bitters Cologne</h4></a>
-                            <a href="#"><p>₩230,000 (100ml)</p></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#"><img src="./img/section_2_img_5.avif"></a>
-                            <a href="#"><h4>Green Almond & Redcurrant Cologne</h4></a>
-                            <a href="#"><p>₩164,000 (50ml)</p></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#"><img src="./img/section_2_img_6.avif"></a>
-                            <a href="#"><h4>Pine & Eucalyptus Diffuser</h4></a>
-                            <a href="#"><p>₩151,000 (165ml)</p></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#"><img src="./img/section_2_img_7.avif"></a>
-                            <a href="#"><h4>Orange Bitters Home Candle</h4></a>
-                            <a href="#"><p>₩112,000 (200g)</p></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#"><img src="./img/section_2_img_8.avif"></a>
-                            <a href="#"><h4>Ginger Biscuit Home Candle</h4></a>
-                            <a href="#"><p>₩112,000 (200g)</p></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="btnL"></div>
-                <div class="btnR"></div>
-                <div class="scrollBar"></div>
-            </div>
-        </section>
-        <!-- section_2_end -->
-        <section class="section_3">
-            <div class="inner">
-                <h1>About Us</h1>
-                <div class="about_item_wrap">
-                    <div class="about_item first">
-                        <h2>/01</h2>
-                        <div class="about_txt">
-                            <a href="#"><h3>어디에나 어울리는 클래식 제품</h3></a>
-                            <a href="#">
-                                <span>VIEW MORE<i class="fa-regular fa-plus"></i></span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="about_item second">
-                        <h2>/02</h2>
-                        <div class="about_txt">
-                            <a href="#"><h3>향기로운 홈 프레그런스</h3></a>
-                            <a href="#">
-                                <span>VIEW MORE<i class="fa-regular fa-plus"></i></span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="about_item third">
-                        <h2>/03</h2>
-                        <div class="about_txt">
-                            <a href="#"><h3>풍부한 영양의 바디 크림</h3></a>
-                            <a href="#">
-                                <span>VIEW MORE<i class="fa-regular fa-plus"></i></span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="about_item fourth">
-                        <h2>/04</h2>
-                        <div class="about_txt">
-                            <a href="#"><h3>기프트 파인더</h3></a>
-                            <a href="#">
-                                <span>VIEW MORE<i class="fa-regular fa-plus"></i></span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="about_item fifth">
-                        <h2>/05</h2>
-                        <div class="about_txt">
-                            <a href="#"><h3>매장 서비스</h3></a>
-                            <a href="#">
-                                <span>VIEW MORE<i class="fa-regular fa-plus"></i></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- section_3_end -->
-        <section class="section_4">
-            <div class="inner">
-                <div class="service_wrap">
-                    <div class="service_item gift">
-                        <i class="fa-solid fa-gift fa-2xl"></i>
-                        <p class="pc">시그니처 박스에 정성스럽게 포장해 드립니다.</p>
-                        <p class="mobile">선물 포장</p>
-                    </div>
-                    <div class="service_item sample">
-                        <i class="fa-solid fa-heart-circle-plus fa-2xl"></i>
-                        <p class="pc">조말론 런던의 새로운 향을 경험해보세요.</p>
-                        <p class="mobile">샘플</p>
-                    </div>
-                    <div class="service_item delivery">
-                        <i class="fa-solid fa-truck fa-2xl"></i>
-                        <p class="pc">향기로운 선물을 무료로 만나보세요.</p>
-                        <p class="mobile">무료 배송</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- section_4_end -->
-        <div class="footer_menu">
-            <div class="inner">
-                <span>고객 서비스</span>
-                <ul class="service">
-                    <a href="#"><li>FAQ</li></a>
-                    <a href="#"><li>마이페이지</li></a>
-                    <a href="#"><li>주문 조회</li></a>
-                    <a href="#"><li>교환 및 환불 규정</li></a>
-                </ul>
-                <span>회사 소개</span>
-                <ul class="information">
-                    <a href="#"><li>법인 정보</li></a>
-                    <a href="#"><li>CAREER</li></a>
-                </ul>
-                <span>SNS</span>
-                <ul class="sns">
-                    <a href="https://www.jomalone.co.kr/"><li>INSTAGRAM</li></a>
-                    <a href="https://www.facebook.com/JoMaloneLondon/"><li>FACEBOOK</li></a>
-                    <a href="https://www.youtube.com/user/JoMaloneLondon2012"><li>YOUTUBE</li></a>
-                </ul>
-            </div>
+      <header>
+        <div class="inner">
+          <div class="logo">
+            <a href="#"><img src="./img/black_logo.png" /></a>
+          </div>
+          <ul class="header_menu">
+            <li class="header_menu_list">
+              <a href="#">SHOP</a>
+              <ul class="list">
+                <li>NEW</li>
+                <li>BEST SELLER</li>
+                <li>GIFT</li>
+              </ul>
+            </li>
+            <li class="header_menu_list">
+              <a href="#">LOGIN</a>
+              <ul class="list">
+                <li>MY PAGE</li>
+                <li>CART</li>
+              </ul>
+            </li>
+            <li class="coupon_btn"><a href="#">COUPON</a></li>
+            <li class="header_menu_list">
+              <a href="#">CONTACT US</a>
+              <ul class="list last_list">
+                <li>STORE SERVICE</li>
+                <li>INSTAGRAM</li>
+                <li>FACEBOOK</li>
+              </ul>
+            </li>
+          </ul>
+          <div class="coupon" role="alert">
+            <p class="download">다운 완료</p>
+            <p class="check">마이페이지에서 확인하세요</p>
+            <button id="ok_btn">OK</button>
+          </div>
+          <div class="header_m_menu">
+            <span class="mobile_menu"></span>
+          </div>
         </div>
-        <!-- footer_menu_end -->
-        <footer class="footer">
-            <div class="inner">
-                <div class="footer_txt">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16">
-                        <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z"/>
-                    </svg>
-                    <p>Jo Malone London 2021</p>
-                </div>
-                <h1 class="footer_logo">
-                    <a href="#">
-                        <img src="./img/footer_logo.jpg">
-                    </a>
-                </h1>
-                <ul class="footer_list">
-                    <li><a href="#">이용약관</a></li>
-                    <li><a href="#">개인정보 처리방침</a></li>
-                    <li><a href="#">사업자정보조회</a></li>
-                </ul>
+        <div class="m_navbar">
+          <ul class="dropDown">
+            <li class="dropDown_title">
+              <a href="#">SHOP</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="13"
+                height="13"
+                fill="currentColor"
+                class="bi bi-chevron-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+              <ul class="dropDown_list">
+                <li>NEW</li>
+                <li>BEST SELLER</li>
+                <li>GIFT</li>
+              </ul>
+            </li>
+            <li class="dropDown_title">
+              <a href="#">LOGIN</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="13"
+                height="13"
+                fill="currentColor"
+                class="bi bi-chevron-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+              <ul class="dropDown_list">
+                <li>MY PAGE</li>
+                <li>CART</li>
+              </ul>
+            </li>
+            <li class="dropDown_title">
+              <a href="#">CONTACT US</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="13"
+                height="13"
+                fill="currentColor"
+                class="bi bi-chevron-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+              <ul class="dropDown_list">
+                <li>STORE SERVICE</li>
+                <li>INSTAGRAM</li>
+                <li>FACEBOOK</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <!-- header_end -->
+      <section class="section_1">
+        <div class="swiper-container_01">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/section_1_img_1.avif" />
             </div>
-        </footer>
-        <!-- footer_end -->
-        <div id="top_btn">↑</div>
+            <div class="swiper-slide">
+              <img src="./img/section_1_img_2.avif" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/section_1_img_3.avif" />
+            </div>
+          </div>
+        </div>
+        <div class="pager"></div>
+      </section>
+      <!-- section_1_end -->
+      <section class="section_2">
+        <div class="inner">
+          <h1>Best Seller</h1>
+          <div class="swiper-container_02">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#"><img src="./img/section_2_img_1.avif" /></a>
+                <a href="#"><h4>Christmas Cologne Collection</h4></a>
+                <a href="#"><p>₩159,000 (9ml*5)</p></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="./img/section_2_img_2.avif" /></a>
+                <a href="#"><h4>Limitied Cologne Collection</h4></a>
+                <a href="#"><p>₩159,000 (9ml*5)</p></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="./img/section_2_img_3.avif" /></a>
+                <a href="#"><h4>Ginger Biscuit Cologne</h4></a>
+                <a href="#"><p>₩230,000 (100ml)</p></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="./img/section_2_img_4.avif" /></a>
+                <a href="#"><h4>Orange Bitters Cologne</h4></a>
+                <a href="#"><p>₩230,000 (100ml)</p></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="./img/section_2_img_5.avif" /></a>
+                <a href="#"><h4>Green Almond & Redcurrant Cologne</h4></a>
+                <a href="#"><p>₩164,000 (50ml)</p></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="./img/section_2_img_6.avif" /></a>
+                <a href="#"><h4>Pine & Eucalyptus Diffuser</h4></a>
+                <a href="#"><p>₩151,000 (165ml)</p></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="./img/section_2_img_7.avif" /></a>
+                <a href="#"><h4>Orange Bitters Home Candle</h4></a>
+                <a href="#"><p>₩112,000 (200g)</p></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="./img/section_2_img_8.avif" /></a>
+                <a href="#"><h4>Ginger Biscuit Home Candle</h4></a>
+                <a href="#"><p>₩112,000 (200g)</p></a>
+              </div>
+            </div>
+          </div>
+          <div class="btnL"></div>
+          <div class="btnR"></div>
+          <div class="scrollBar"></div>
+        </div>
+      </section>
+      <!-- section_2_end -->
+      <section class="section_3">
+        <div class="inner">
+          <h1>About Us</h1>
+          <div class="about_item_wrap">
+            <div class="about_item first">
+              <h2>/01</h2>
+              <div class="about_txt">
+                <a href="#"><h3>어디에나 어울리는 클래식 제품</h3></a>
+                <a href="#">
+                  <span>VIEW MORE<i class="fa-regular fa-plus"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="about_item second">
+              <h2>/02</h2>
+              <div class="about_txt">
+                <a href="#"><h3>향기로운 홈 프레그런스</h3></a>
+                <a href="#">
+                  <span>VIEW MORE<i class="fa-regular fa-plus"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="about_item third">
+              <h2>/03</h2>
+              <div class="about_txt">
+                <a href="#"><h3>풍부한 영양의 바디 크림</h3></a>
+                <a href="#">
+                  <span>VIEW MORE<i class="fa-regular fa-plus"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="about_item fourth">
+              <h2>/04</h2>
+              <div class="about_txt">
+                <a href="#"><h3>기프트 파인더</h3></a>
+                <a href="#">
+                  <span>VIEW MORE<i class="fa-regular fa-plus"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="about_item fifth">
+              <h2>/05</h2>
+              <div class="about_txt">
+                <a href="#"><h3>매장 서비스</h3></a>
+                <a href="#">
+                  <span>VIEW MORE<i class="fa-regular fa-plus"></i></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section_3_end -->
+      <section class="section_4">
+        <div class="inner">
+          <div class="service_wrap">
+            <div class="service_item gift">
+              <i class="fa-solid fa-gift fa-2xl"></i>
+              <p class="pc">시그니처 박스에 정성스럽게 포장해 드립니다.</p>
+              <p class="mobile">선물 포장</p>
+            </div>
+            <div class="service_item sample">
+              <i class="fa-solid fa-heart-circle-plus fa-2xl"></i>
+              <p class="pc">조말론 런던의 새로운 향을 경험해보세요.</p>
+              <p class="mobile">샘플</p>
+            </div>
+            <div class="service_item delivery">
+              <i class="fa-solid fa-truck fa-2xl"></i>
+              <p class="pc">향기로운 선물을 무료로 만나보세요.</p>
+              <p class="mobile">무료 배송</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section_4_end -->
+      <div class="footer_menu">
+        <div class="inner">
+          <span>고객 서비스</span>
+          <ul class="service">
+            <a href="#"><li>FAQ</li></a>
+            <a href="#"><li>마이페이지</li></a>
+            <a href="#"><li>주문 조회</li></a>
+            <a href="#"><li>교환 및 환불 규정</li></a>
+          </ul>
+          <span>회사 소개</span>
+          <ul class="information">
+            <a href="#"><li>법인 정보</li></a>
+            <a href="#"><li>CAREER</li></a>
+          </ul>
+          <span>SNS</span>
+          <ul class="sns">
+            <a href="https://www.jomalone.co.kr/"><li>INSTAGRAM</li></a>
+            <a href="https://www.facebook.com/JoMaloneLondon/"
+              ><li>FACEBOOK</li></a
+            >
+            <a href="https://www.youtube.com/user/JoMaloneLondon2012"
+              ><li>YOUTUBE</li></a
+            >
+          </ul>
+        </div>
+      </div>
+      <!-- footer_menu_end -->
+      <footer class="footer">
+        <div class="inner">
+          <div class="footer_txt">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-c-circle"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z"
+              />
+            </svg>
+            <p>Jo Malone London 2021</p>
+          </div>
+          <h1 class="footer_logo">
+            <a href="#">
+              <img src="./img/footer_logo.jpg" />
+            </a>
+          </h1>
+          <ul class="footer_list">
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보 처리방침</a></li>
+            <li><a href="#">사업자정보조회</a></li>
+          </ul>
+        </div>
+      </footer>
+      <!-- footer_end -->
+      <div id="top_btn">↑</div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
-
-</body>
+  </body>
 </html>
